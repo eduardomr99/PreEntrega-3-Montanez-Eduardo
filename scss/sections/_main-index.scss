@@ -80,7 +80,7 @@ h4 {
 //Index-Fotos
 
 .main__fotos--ancho {
-    width: 600px;
+    width: $ancho_index + 210;
     @extend .flex-center;
 
 
@@ -99,12 +99,12 @@ h4 {
 
         .main__fotos--arriba {
             grid-area: main__fotos--arriba;
-            width: 600px;
+            width: $ancho_index +210;
             @extend .flex-center;
         }
 
         .main__fotos--abajo {
-            width: 600px;
+            width: $ancho_index +210;
             grid-area: main__fotos--abajo;
             @extend .grid-center;
             gap: 0;
@@ -165,12 +165,12 @@ h4 {
 
     .main__videos--arriba {
         grid-area: main__fotos--arriba;
-        width: 600px;
+        width: $ancho_index + 210;
         @extend .flex-center;
     }
 
     .main__videos--abajo {
-        width: 600px;
+        width: $ancho_index + 210;
         grid-area: main__fotos--abajo;
         @extend .flex-center;
 
@@ -229,7 +229,7 @@ h4 {
 
 
     .index__tour {
-        width: 500px;
+        width: $ancho_index + 110;
 
         .main__tour1 {
             height: 100%;
@@ -241,18 +241,18 @@ h4 {
     }
 
     .main__fotos--ancho {
-        width: 380px;
+        width: $ancho_index;
 
         .main__fotos {
             width: 100%;
 
             .main__fotos--abajo {
-                width: 390px;
+                width: $ancho_index;
                 height: 100%;
             }
 
             .main__fotos--arriba {
-                width: 390px;
+                width: $ancho_index;
             }
         }
     }
@@ -269,14 +269,14 @@ h4 {
         padding: 0 10px 0 10px;
 
         .main__videos--arriba {
-            width: 380px;
+            width: $ancho_index;
         }
 
         .main__videos--abajo {
-            width: 380px;
+            width: $ancho_index;
 
             .main__videos__size {
-                width: 380px;
+                width: $ancho_index;
                 height: 300px;
             }
         }

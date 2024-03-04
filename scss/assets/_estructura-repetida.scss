@@ -51,6 +51,9 @@
     .card__texto2 {
         font-size: xx-small;
     }
+    h5 {
+        font-size: 11px;
+    }
 }
 
 .margen {
@@ -82,3 +85,13 @@
     @extend .flex-center;
     padding: 2px;
 }
+
+.texto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2px;
+    height: 100%;
+    font-size: 10px;
+}
+

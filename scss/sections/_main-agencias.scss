@@ -28,7 +28,7 @@
     .agencia__size--responsive {
         .agencia__size {
 
-            width: 600px;
+            width: $ancho_agencias;
         }
 
     }
@@ -41,7 +41,7 @@
         display: flex;
         flex-wrap: wrap;
         .agencia__size {
-            width: 300px;
+            width: $ancho_agencias/2;
             display: grid;
             margin: 0;
             gap: 2px;
