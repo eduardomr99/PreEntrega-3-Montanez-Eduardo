@@ -6,23 +6,23 @@
 body {
   overflow-x: hidden; }
 
-.flex-center {
+.flex-center, .main__fotos--ancho, .main__fotos--ancho .main__fotos .main__fotos--arriba, .main__videos .main__videos--arriba, .main__videos .main__videos--abajo, .agencia__size--responsive, .lugares__card__centrado, .card__titulo, .form__centrado {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.flex-wrap {
+.flex-wrap, .index__tour--flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center; }
 
-.grid-center {
+.grid-center, .index__lugares__size, .index__tour--flex .index__tour, .main__fotos--ancho .main__fotos, .main__fotos--ancho .main__fotos .main__fotos--abajo, .main__videos, .agencia__size--responsive .agencia__size {
   display: grid;
   justify-content: center;
   align-items: center; }
 
-.h4 {
+.h4, h4 {
   text-align: center;
   background-color: green;
   width: 100vw;
@@ -106,6 +106,217 @@ body {
       padding: 8px;
       background-color: green;
       color: white; }
+
+.index__lugares__size {
+  width: 100vw;
+  padding: 0 8% 1% 7%;
+  margin: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "main__lugares1 main__lugares2 main__lugares3"; }
+  .index__lugares__size .main__lugares1 {
+    grid-area: main__lugares1;
+    padding: 0 10px 0 10px; }
+  .index__lugares__size .main__lugares2 {
+    grid-area: main__lugares2;
+    padding: 0 10px 0 10px; }
+  .index__lugares__size .main__lugares3 {
+    grid-area: main__lugares3;
+    padding: 0 10px 0 10px; }
+
+.index__tour--flex .index__tour {
+  width: 800px;
+  gap: 5px;
+  padding: 10px;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-areas: "main__tour1 main__tour2"; }
+  .index__tour--flex .index__tour .main__tour1 {
+    grid-area: main__tour1;
+    padding: 0 10px 0 10px; }
+  .index__tour--flex .index__tour .main__tour2 {
+    grid-area: main__tour2;
+    padding: 0 10px 0 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "main__tour2--arriba main__tour2--arriba" "main__tour2--abajo main__tour2--abajo" "main__tour2--abajo main__tour2--abajo"; }
+    .index__tour--flex .index__tour .main__tour2 .main__tour2--arriba {
+      grid-area: main__tour2--arriba; }
+    .index__tour--flex .index__tour .main__tour2 .main__tour2--abajo {
+      grid-area: main__tour2--abajo; }
+
+.main__fotos--ancho {
+  width: 600px; }
+  .main__fotos--ancho .main__fotos {
+    width: 100vw;
+    margin: 0 2px 0 0;
+    gap: 0;
+    height: 360px;
+    grid-column: 1fr;
+    grid-template-rows: 0.5fr 3.5fr;
+    grid-template-areas: "main__fotos--arriba" "main__fotos--abajo"; }
+    .main__fotos--ancho .main__fotos .main__fotos--arriba {
+      grid-area: main__fotos--arriba;
+      width: 600px; }
+    .main__fotos--ancho .main__fotos .main__fotos--abajo {
+      width: 600px;
+      grid-area: main__fotos--abajo;
+      gap: 0;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "main__fotos__grid1 main__fotos__grid1 main__fotos__grid1 main__fotos__grid1 main__fotos__grid2 main__fotos__grid2 main__fotos__grid2 main__fotos__grid2" "main__fotos__grid1 main__fotos__grid1 main__fotos__grid1 main__fotos__grid1 main__fotos__grid2 main__fotos__grid2 main__fotos__grid2 main__fotos__grid2" "main__fotos_grid3 main__fotos_grid3 main__fotos_grid3 main__fotos_grid3 main__fotos__grid4 main__fotos__grid4 main__fotos__grid4 main__fotos__grid4" "main__fotos_grid3 main__fotos_grid3 main__fotos_grid3 main__fotos_grid3 main__fotos__grid4 main__fotos__grid4 main__fotos__grid4 main__fotos__grid4"; }
+      .main__fotos--ancho .main__fotos .main__fotos--abajo .main__fotos__grid1 {
+        grid-area: main__fotos__grid1; }
+      .main__fotos--ancho .main__fotos .main__fotos--abajo .main__fotos__grid2 {
+        grid-area: main__fotos__grid2; }
+      .main__fotos--ancho .main__fotos .main__fotos--abajo .main__fotos_grid3 {
+        grid-area: main__fotos_grid3; }
+      .main__fotos--ancho .main__fotos .main__fotos--abajo .main__fotos__grid4 {
+        grid-area: main__fotos__grid4; }
+
+.main__fotos--botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px; }
+
+.main__videos {
+  width: 100vw;
+  margin: 0 2px 0 0;
+  gap: 0;
+  height: 360px;
+  grid-column: 1fr;
+  grid-template-rows: 0.5fr 3.5fr;
+  grid-template-areas: "main__fotos--arriba" "main__fotos--abajo"; }
+  .main__videos .main__videos--arriba {
+    grid-area: main__fotos--arriba;
+    width: 600px; }
+  .main__videos .main__videos--abajo {
+    width: 600px;
+    grid-area: main__fotos--abajo; }
+    .main__videos .main__videos--abajo .main__videos__size {
+      width: 600px;
+      height: 300px; }
+
+@media (max-width: 800px) {
+  .index__lugares__size {
+    padding: 0 4% 0.5% 3%; } }
+
+@media (max-width: 640px) {
+  .index__lugares__size {
+    display: none; }
+  .main__size__responsive1 {
+    width: 100vw;
+    display: grid;
+    padding: 5% 25% 5% 25%;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "main__lugares1" "main__lugares2" "main__lugares3"; }
+    .main__size__responsive1 .main__lugares1__responsive1 {
+      grid-area: main__lugares1;
+      padding: 0 30px 0 30px; }
+    .main__size__responsive1 .main__lugares2__responsive1 {
+      grid-area: main__lugares2;
+      padding: 0 30px 0 30px; }
+    .main__size__responsive1 .main__lugares3__responsive1 {
+      grid-area: main__lugares3;
+      padding: 0 30px 0 30px; }
+  .index__tour {
+    width: 500px; }
+    .index__tour .main__tour1 {
+      height: 100%; }
+    .index__tour .main__tour2 {
+      height: 100%; }
+  .main__fotos--ancho {
+    width: 380px; }
+    .main__fotos--ancho .main__fotos {
+      width: 100%; }
+      .main__fotos--ancho .main__fotos .main__fotos--abajo {
+        width: 390px;
+        height: 100%; }
+      .main__fotos--ancho .main__fotos .main__fotos--arriba {
+        width: 390px; }
+  .main__fotos--botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 12px; }
+  .main__videos {
+    padding: 0 10px 0 10px; }
+    .main__videos .main__videos--arriba {
+      width: 380px; }
+    .main__videos .main__videos--abajo {
+      width: 380px; }
+      .main__videos .main__videos--abajo .main__videos__size {
+        width: 380px;
+        height: 300px; } }
+
+@media (max-width: 500px) {
+  .main__size__responsive1 .main__lugares1__responsive1 {
+    grid-area: main__lugares1;
+    padding: 0 4% 0 4%; }
+  .main__size__responsive1 .main__lugares2__responsive1 {
+    grid-area: main__lugares2;
+    padding: 0 4% 0 4%; }
+  .main__size__responsive1 .main__lugares3__responsive1 {
+    grid-area: main__lugares3;
+    padding: 0 4% 0 4%; } }
+
+.agencia__size--responsive .agencia__size {
+  width: 800px;
+  padding: 0 30px 0 30px;
+  margin: 0;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "main__agencia1 main__agencia2"; }
+  .agencia__size--responsive .agencia__size .main__agencia1 {
+    grid-area: main__agencia1; }
+  .agencia__size--responsive .agencia__size .main__agencia2 {
+    grid-area: main__agencia2; }
+
+@media (max-width: 800px) {
+  .agencia__size--responsive .agencia__size {
+    width: 600px; } }
+
+@media (max-width: 640px) {
+  .agencia__size--responsive {
+    display: flex;
+    flex-wrap: wrap; }
+    .agencia__size--responsive .agencia__size {
+      width: 300px;
+      display: grid;
+      margin: 0;
+      gap: 2px;
+      padding: 0 20px 0 20px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "main__agencia1" "main__agencia2"; } }
+
+.main__lugares--card {
+  margin: 0 25% 2% 25%; }
+
+.lugares__card__centrado {
+  width: 100%;
+  height: 180px; }
+
+.card__titulo {
+  font-size: large;
+  padding: 5px 10% 5px 10%; }
+
+.form__centrado {
+  width: 100vw;
+  padding: 0 15% 0 15%; }
+  .form__centrado .main__formato {
+    background-color: #a8d4ac;
+    width: 100%;
+    visibility: inherit;
+    margin: 10px;
+    padding: 15px; }
+
+@media (max-width: 640px) {
+  .form__centrado {
+    padding: 0 5px 0 5px; } }
 
 .footer {
   background-color: #a8d4ac;
