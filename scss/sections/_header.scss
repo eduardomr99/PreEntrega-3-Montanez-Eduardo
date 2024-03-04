@@ -1,28 +1,38 @@
 .header__color {
-    background-color: $verde_header;
+    background-image: linear-gradient(to left, $blanco);
 
     .header__nav__derecha {
         flex-direction: row-reverse;
 
         .header__nav {
-
+            display: flex;
+            align-items: center;
+      
             a {
-
+                
                 &:hover {
+                    
                     color: $blanco;
+                    height: 55px;
+                    transform: skewX(5deg);
                     transition: all .3s;
-                    background-color: $verde_main;
+                    background-color: $titulos;
+
                 }
 
                 &:active {
-                    background-color: $verde_main;
+                    background-color: $titulos;
+                    transform: skewX(5deg);
+                    height: 45px;
                     color: $blanco;
                 }
             }
 
             .header__nav--active {
                 padding: 8px;
-                background-color: $verde_main;
+                background-color: $titulos;
+                transform: skewX(5deg);
+                height: 45px;
                 color: $blanco;
             }
         }

@@ -1,4 +1,3 @@
-
 //Se crea para definir un tamaño estandar, en caso de mobile se adecue al tamaño del card
 .imagen {
     height: 190px;
@@ -15,7 +14,7 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: $verde_header;
+    background-color: $botones;
 }
 
 .estilo_subtitulo {
@@ -51,6 +50,7 @@
     .card__texto2 {
         font-size: xx-small;
     }
+
     h5 {
         font-size: 11px;
     }
@@ -95,3 +95,25 @@
     font-size: 10px;
 }
 
+.boton__selector {
+
+    &:hover {
+        color: $blanco;
+        transition: all .1s;
+        font-size: 25px;
+        background-color: $azul_header;
+
+
+    }
+
+}
+
+.fondo__selector{
+
+    &:hover{
+        color: $blanco;
+        transition: all .1s;
+        background-color: $azul_header;
+
+    }
+}

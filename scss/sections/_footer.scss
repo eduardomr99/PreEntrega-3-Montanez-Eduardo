@@ -1,11 +1,12 @@
 .footer {
-    background-color: $verde_header;
+    background-color: $azul_header;
     width: 100vw;
     list-style: none;
     padding: 20px 30px 20px 70px;
 
     .footer-row {
-        @extend .flex-wrap;
+        display: flex;
+        flex-direction: wrap;
 
         div {
             width: 25%;
