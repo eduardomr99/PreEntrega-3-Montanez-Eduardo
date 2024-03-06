@@ -279,8 +279,6 @@ main {
       margin: 0 30px 0 30px; }
   .index__tour {
     width: 490px; }
-    .index__tour .main__tour1 {
-      height: 100%; }
     .index__tour .main__tour2 {
       height: 100%; }
   .main__fotos--ancho {
@@ -320,7 +318,11 @@ main {
   .main__size__responsive1 .main__lugares3__responsive1 {
     grid-area: main__lugares3;
     margin: 0 4% 0 4%;
-    padding: 0; } }
+    padding: 0; }
+  .main__tour1 {
+    height: 120px;
+    display: flex;
+    align-items: center; } }
 
 .agencia__size--responsive .agencia__size {
   width: 800px;

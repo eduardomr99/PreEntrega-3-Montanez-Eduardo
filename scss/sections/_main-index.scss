@@ -53,6 +53,8 @@ main{
         .main__tour1 {
             grid-area: main__tour1;
             margin: 0 10px 0 10px;
+           
+     
             a {
                 font-size: 23px;
                 text-decoration: none;
@@ -255,9 +257,7 @@ main{
     .index__tour {
         width: $ancho_index + 110;
 
-        .main__tour1 {
-            height: 100%;
-        }
+
 
         .main__tour2 {
             height: 100%;
@@ -331,5 +331,11 @@ main{
             padding: 0;
         }
 
+    }
+    .main__tour1 {
+            
+        height: 120px;
+        display: flex;
+        align-items: center;
     }
 }
