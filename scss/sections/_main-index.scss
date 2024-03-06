@@ -53,6 +53,17 @@ main{
         .main__tour1 {
             grid-area: main__tour1;
             margin: 0 10px 0 10px;
+            a {
+                font-size: 23px;
+                text-decoration: none;
+                color: $negro;
+                display: block;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: $blanco;
+                }
+            }
         }
 
         .main__tour2 {
@@ -69,10 +80,21 @@ main{
 
             .main__tour2--arriba {
                 grid-area: main__tour2--arriba;
+                align-items: center;
+                justify-content: space-evenly;
+                img{
+                    animation-name: latidos;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                
+                }
             }
 
             .main__tour2--abajo {
                 grid-area: main__tour2--abajo;
+                p{
+                    text-align: center;
+                }
             }
 
         }

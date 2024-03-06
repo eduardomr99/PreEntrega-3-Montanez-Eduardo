@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: wrap;
 
-        div {
+        .footer-links {
             width: 25%;
 
             h6 {
@@ -29,6 +29,19 @@
                         text-decoration: none;
                         color: $negro;
                         display: block;
+                        transition: all 0.1s ease;
+
+                        &:hover {
+                            color: $blanco;
+                        }
+                    }
+
+                    transition: all 0.1s ease;
+
+                    &:hover {
+                        transform: scale(1.05);
+
+
                     }
                 }
             }
@@ -37,23 +50,32 @@
 }
 
 
+
 @media (max-width:640px) {
 
-    .footer__centrar {
+    .footer {
+        padding: 20px 40px 20px 40px;
         display: flex;
         justify-content: center;
 
-        .footer-row {
-            width: 300px;
+        .footer__centrar {
             display: flex;
-            flex-direction: row;
+            justify-content: center;
+            align-items: center;
 
-
-            .footer-links {
+            .footer-row {
                 width: 50%;
-                display: block;
-                padding: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
 
+
+                .footer-links {
+                    width: 90px;
+                    display: block;
+                    padding: 5px;
+
+                }
             }
         }
     }

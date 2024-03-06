@@ -1,9 +1,23 @@
-@keyframes prueba{
+@keyframes latidos{
     0%{
         transform: scale(1);
     }
     50%{
-        transform: scale(0.8);
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+@keyframes latidos_2{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+        color: $azul_header;
     }
     100%{
         transform: scale(1);
