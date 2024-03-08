@@ -2,7 +2,7 @@
     background-color: $azul_header;
     width: 100vw;
     list-style: none;
-    padding: 20px 30px 20px 70px;
+    padding: 20px 10px 20px 100px;
 
     .footer-row {
         display: flex;
@@ -75,8 +75,13 @@
                     display: block;
                     padding: 5px;
 
+                    li {
+                        a {
+                            font-size: 9px;
+                        }
                 }
             }
         }
     }
+}
 }

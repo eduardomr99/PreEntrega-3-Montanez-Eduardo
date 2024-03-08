@@ -13,7 +13,7 @@
 .main__subtitulo {
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 5px 0 0 0;
     background-color: $botones;
 }
 
@@ -43,12 +43,15 @@
 // Card similar al original, pero creado para usar en mobile un tamaño de letra más chiquita en el index
 .card__texto2 {
     @extend .flex-center;
-    padding: 10px;
+    padding: 2px;
+    margin: 0 15px 5px 15px;
 }
 
 @media (max-width:640px) {
     .card__texto2 {
         font-size: xx-small;
+        padding: 2px;
+        margin: 0 5px 5px 5px;
     }
 
     h5 {
@@ -103,15 +106,24 @@
         transition: all .1s;
         font-size: 23px;
         background-color: $azul_header;
-
-
     }
 
 }
 
-.fondo__selector{
+@media (max-width:640px) {
 
-    &:hover{
+    .boton__selector {
+
+        &:hover {
+            font-size: 14px;
+         
+        }
+    }
+}
+
+.fondo__selector {
+
+    &:hover {
         color: $blanco;
         transition: all .1s;
         background-color: $azul_header;

@@ -54,18 +54,6 @@ main{
             grid-area: main__tour1;
             margin: 0 10px 0 10px;
            
-     
-            a {
-                font-size: 23px;
-                text-decoration: none;
-                color: $negro;
-                display: block;
-                transition: all 0.3s ease;
-
-                &:hover {
-                    color: $blanco;
-                }
-            }
         }
 
         .main__tour2 {
@@ -108,14 +96,14 @@ main{
 //Index-Fotos
 
 .main__fotos--ancho {
-    width: $ancho_index + 210;
     @extend .flex-center;
+    width: 100%;
 
 
     .main__fotos {
         @extend .grid-center;
         width: 100vw;
-        margin: 0 2px 0 0;
+        margin: 0;
         gap: 0;
         height: 360px;
         grid-column: 1fr;
@@ -265,10 +253,11 @@ main{
     }
 
     .main__fotos--ancho {
-        width: $ancho_index;
+        width: 100%;
 
         .main__fotos {
-            width: 100%;
+            width: 100vw;
+            margin: 0 15px 0 0;
 
             .main__fotos--abajo {
                 width: $ancho_index;
@@ -290,7 +279,7 @@ main{
     }
 
     .main__videos {
-        padding: 0 10px 0 10px;
+        padding: 0 15px 0 0;
 
         .main__videos--arriba {
             width: $ancho_index;

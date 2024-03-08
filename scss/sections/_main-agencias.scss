@@ -48,7 +48,7 @@
                 display: block;
 
                 transition: all 0.1s ease;
-                
+
                 animation-name: latidos_2;
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
@@ -95,6 +95,17 @@
                 "main__agencia1"
                 "main__agencia2"
             ;
+
+            .main__agencia1{
+                a{
+                    font-size: 14px;
+                }
+            }
+            .main__agencia2{
+                a{
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
