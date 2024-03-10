@@ -1,7 +1,6 @@
-
 //No se coloca uno dentro del otro porque termina cambiando el display tambien chocando con las clases de Bootstrap
 .main__lugares--card {
-    margin: 0 25% 2% 25%;    
+    margin: 0 25% 2% 25%;
 }
 
 .lugares__card__centrado {
@@ -10,9 +9,98 @@
     height: 180px;
 }
 
-.card__titulo {
-    @extend .flex-center;
-    font-size: large;
-    padding: 5px 10% 5px 10%;
 
+
+
+
+//Parte  nueva
+
+.lugares__size--flex {
+
+    @extend .flex-wrap;
+
+    .lugares__size {
+        background-color: $verde_main;
+        width: 600px;
+        margin: 0 0 10px 0;
+        @extend .grid-center;
+        gap: 4px;
+        padding: 6px;
+        grid-template-columns: 3fr 2fr;
+        grid-template-areas:
+            "main__lugares1 main__lugares2"
+        ;
+
+        .main__lugares1 {
+            grid-area: main__lugares1;
+            margin: 0 5px 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+
+        }
+
+        .main__lugares2 {
+            grid-area: main__lugares2;
+            margin: 0 5px 0 5px;
+            justify-content: center;
+            text-align: center;
+
+            .card__titulo {
+                @extend .flex-center;
+                font-size: large;
+                padding: 5px 10% 5px 10%;
+
+            }
+
+            .card__texto__lugares {
+                @extend .flex-center;
+                font-size: medium;
+
+            }
+        }
+
+    }
+}
+
+@media (max-width:640px) {
+
+    .lugares__size--flex {
+
+        .lugares__size {
+            width: 500px;
+            gap: 2px;
+            padding: 8px;
+            grid-template-columns: 2fr 1fr;
+            grid-template-areas:
+                "main__lugares1 main__lugares2"
+            ;
+
+            .main__lugares1 {
+                grid-area: main__lugares1;
+                margin: 0 10px 0 10px;
+
+            }
+
+            .main__lugares2 {
+                grid-area: main__lugares2;
+
+                .card__titulo {
+
+                    font-size: small;
+                    padding: 5px 10% 5px 10%;
+
+                }
+
+                .card__texto__lugares {
+
+                    font-size: x-small;
+
+                }
+            }
+
+
+        }
+    }
 }
