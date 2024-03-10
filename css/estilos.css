@@ -3,9 +3,6 @@
   padding: 0;
   list-style: none; }
 
-body {
-  overflow-x: hidden; }
-
 .flex-center, .card__texto, .card__texto2, .main__fotos--ancho, .main__fotos--ancho .main__fotos .main__fotos--arriba, .main__fotos--botones, .main__videos .main__videos--arriba, .main__videos .main__videos--abajo, .agencia__size--responsive, .lugares__card__centrado, .lugares__size--flex .lugares__size .main__lugares2 .card__titulo, .lugares__size--flex .lugares__size .main__lugares2 .card__texto__lugares, .form__centrado {
   display: flex;
   justify-content: center;
@@ -46,6 +43,9 @@ body {
   color: black;
   text-decoration: none; }
 
+body {
+  overflow-x: hidden; }
+
 .card__texto {
   padding: 10px 5px 0 5px; }
 
@@ -74,11 +74,11 @@ body {
   padding: 0; }
 
 .logo__agencia {
-  width: 80px; }
+  width: 70px; }
 
 @media (max-width: 640px) {
   .logo__agencia {
-    width: 45px; } }
+    width: 40px; } }
 
 .main__fotos--imagen {
   height: 160px;
@@ -111,6 +111,9 @@ body {
   color: white;
   transition: all .1s;
   background-color: #4287fc; }
+
+.fondo__experiencias {
+  background-image: linear-gradient(to top, #bbd8ef, white); }
 
 @keyframes latidos {
   0% {
