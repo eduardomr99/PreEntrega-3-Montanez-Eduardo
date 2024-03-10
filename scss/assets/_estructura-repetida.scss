@@ -26,6 +26,7 @@
 body {
     overflow-x: hidden;
 }
+
 //Cards más grandes en las paginas que no son el index
 .card__texto {
     @extend .flex-center;
@@ -59,7 +60,7 @@ body {
     }
 
     h5 {
-        font-size: 11px;
+        font-size: 15px;
     }
 }
 
@@ -120,7 +121,7 @@ body {
 
         &:hover {
             font-size: 14px;
-         
+
         }
     }
 }
@@ -135,6 +136,6 @@ body {
     }
 }
 
-.fondo__experiencias{
-    background-image: linear-gradient(to top,$verde_main,$blanco);
+.fondo__experiencias {
+    background-image: linear-gradient(to top, $verde_main, $blanco);
 }

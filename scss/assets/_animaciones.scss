@@ -1,25 +1,29 @@
-@keyframes latidos{
-    0%{
+@keyframes latidos {
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.1);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 
 }
 
-@keyframes latidos_2{
-    0%{
+@keyframes latidos_2 {
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.05);
         color: $azul_header;
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 
