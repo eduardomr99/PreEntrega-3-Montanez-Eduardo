@@ -9,6 +9,24 @@
     }
 }
 
+//Tipografia
+h1{
+    font-family: "jumper";
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 0 0;
+    font-size: xx-large;
+    text-align: center;
+    color: $blanco;
+
+}
+
+.text__none{
+    text-decoration: none;
+}
+
 //Caracteristicas en todas las paginas para los subtitulos de los Cards
 .main__subtitulo {
     text-align: center;

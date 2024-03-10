@@ -1,8 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+  list-style: none; }
+
+@font-face {
+  font-family: "jumper";
+  src: url("../../resources/tipografia/JumperPERSONALUSEONLY-Bold.ttf"); }
 
 .flex-center, .card__texto, .card__texto2, .main__fotos--ancho, .main__fotos--ancho .main__fotos .main__fotos--arriba, .main__fotos--botones, .main__videos .main__videos--arriba, .main__videos .main__videos--abajo, .agencia__size--responsive, .lugares__card__centrado, .lugares__size--flex .lugares__size .main__lugares2 .card__titulo, .lugares__size--flex .lugares__size .main__lugares2 .card__texto__lugares, .form__centrado {
   display: flex;
@@ -33,6 +36,20 @@
 @media (max-width: 640px) {
   .imagen {
     height: 100px; } }
+
+h1 {
+  font-family: "jumper";
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 0 0;
+  font-size: xx-large;
+  text-align: center;
+  color: white; }
+
+.text__none {
+  text-decoration: none; }
 
 .main__subtitulo {
   text-align: center;
@@ -467,7 +484,7 @@ body {
       .footer .footer-row .footer-links h6 {
         font-size: 15px;
         color: black;
-        font-weight: 500px;
+        font-weight: 500;
         border-bottom: 2px solid white;
         display: inline-block; }
       .footer .footer-row .footer-links ul {
@@ -506,3 +523,7 @@ body {
           padding: 5px; }
           .footer .footer__centrar .footer-row .footer-links li a {
             font-size: 9px; } }
+
+@font-face {
+  font-family: "jumper";
+  src: url("../resources/tipografia/JumperPERSONALUSEONLY-Regular.ttf"); }

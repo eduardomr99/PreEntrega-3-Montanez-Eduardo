@@ -12,3 +12,9 @@
 @import './sections/main-lugares';
 @import './sections/main-contactanos';
 @import './sections/footer';
+
+//No se como agregar a los assets el url de lo que descargue
+@font-face {
+    font-family: "jumper";
+    src: url('../resources/tipografia/JumperPERSONALUSEONLY-Regular.ttf');
+}
