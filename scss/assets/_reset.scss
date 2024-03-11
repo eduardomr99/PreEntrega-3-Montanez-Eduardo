@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 @font-face {
     font-family: "jumper";
     src: url('../resources/tipografia/JumperPERSONALUSEONLY-Regular.ttf');
@@ -18,9 +24,5 @@
     src: url('../resources/tipografia/JumperPERSONALUSEONLY-Thin.ttf');
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 @font-face {
   font-family: "jumper";
   src: url("../resources/tipografia/JumperPERSONALUSEONLY-Regular.ttf"); }
@@ -13,11 +18,6 @@
 @font-face {
   font-family: "jumper-4";
   src: url("../resources/tipografia/JumperPERSONALUSEONLY-Thin.ttf"); }
-
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
 
 .flex-center, .card__texto, .card__texto2, .main__fotos--ancho, .main__fotos--ancho .main__fotos .main__fotos--arriba, .main__fotos--botones, .main__videos .main__videos--arriba, .main__videos .main__videos--abajo, .agencia__size--responsive, .lugares__card__centrado, .lugares__size--flex .lugares__size .main__lugares2 .card__titulo, .lugares__size--flex .lugares__size .main__lugares2 .card__texto__lugares, .form__centrado {
   display: flex;
