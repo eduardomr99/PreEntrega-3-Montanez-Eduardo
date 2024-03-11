@@ -9,7 +9,8 @@
             align-items: center;
 
             a {
-
+                font-family: 'jumper-3';
+                font-size: 12px;
                 &:hover {
 
                     color: $blanco;
@@ -38,3 +39,4 @@
         }
     }
 }
+

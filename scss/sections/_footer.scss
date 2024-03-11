@@ -12,11 +12,12 @@
             width: 25%;
 
             h6 {
-                font-size: 15px;
+                font-size: 14px;
                 color: $negro;
                 font-weight: 500;
                 border-bottom: 2px solid $blanco;
                 display: inline-block;
+                font-family: 'jumper-3';
             }
 
             ul {
@@ -26,6 +27,7 @@
                 li {
                     a {
                         font-size: 13px;
+                        font-family: 'jumper-4';
                         text-decoration: none;
                         color: $negro;
                         display: block;
@@ -69,11 +71,14 @@
                 flex-wrap: wrap;
                 justify-content: center;
 
-
                 .footer-links {
                     width: 90px;
                     display: block;
                     padding: 5px;
+
+                    h6{
+                        font-size: 11px;
+                    }
 
                     li {
                         a {

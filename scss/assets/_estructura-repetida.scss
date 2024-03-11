@@ -20,6 +20,7 @@ h1{
     font-size: xx-large;
     text-align: center;
     color: $blanco;
+    line-height: 0.9;
 
 }
 
@@ -68,6 +69,10 @@ body {
     @extend .flex-center;
     padding: 2px;
     margin: 0 15px 5px 15px;
+}
+
+h5{
+    font-family: 'jumper-2';
 }
 
 @media (max-width:640px) {

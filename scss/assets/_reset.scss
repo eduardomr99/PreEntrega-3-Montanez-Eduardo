@@ -1,11 +1,26 @@
+@font-face {
+    font-family: "jumper";
+    src: url('../resources/tipografia/JumperPERSONALUSEONLY-Regular.ttf');
+}
+
+@font-face {
+    font-family: "jumper-2";
+    src: url('../resources/tipografia/JumperPERSONALUSEONLY-Bold.ttf');
+}
+
+@font-face {
+    font-family: "jumper-3";
+    src: url('../resources/tipografia/JumperPERSONALUSEONLY-RegularItalic.ttf');
+}
+
+@font-face {
+    font-family: "jumper-4";
+    src: url('../resources/tipografia/JumperPERSONALUSEONLY-Thin.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
-
 }
 
-@font-face {
-    font-family: "jumper";
-    src: url('../../resources/tipografia/JumperPERSONALUSEONLY-Bold.ttf');
-}
