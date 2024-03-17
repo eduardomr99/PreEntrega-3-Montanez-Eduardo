@@ -71,8 +71,9 @@ body {
     margin: 0 15px 5px 15px;
 }
 
-h5{
+h3{
     font-family: 'jumper-2';
+    font-size: large;
 }
 
 @media (max-width:640px) {
@@ -82,7 +83,7 @@ h5{
         margin: 0 5px 5px 5px;
     }
 
-    h5 {
+    h3 {
         font-size: 15px;
     }
 }
